@@ -1,11 +1,11 @@
-title: John Doe # your name (or website title) here
+title: Anna Reithmeir # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Master's student of Informatics at TU Munich
   <br><br>
-  Second description 
+  24, Munich based
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/anna-reithmeir-a45bb7165/">LinkedIn</a> 
   
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
