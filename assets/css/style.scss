@@ -2,6 +2,35 @@
 ---
 
 @import "{{ site.theme }}";
+body {
+  background-color: #fbfbfb;
+  padding:50px;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#727272;
+  font-weight:400;
+}
+
+section {
+  width:700px;
+  float:right;
+  padding-bottom:50px;
+}
+
+header {
+  width:270px;
+  float:left;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+footer {
+  width:270px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
 .contact .contact-title {
   position: relative;
   color: #333030;
