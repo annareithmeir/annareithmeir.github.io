@@ -1,9 +1,9 @@
-## Portfolio
+# Portfolio
 
----
+
 
 ### Projects
-
+---
 [Predicting secondary structure of proteins with Neural Networks](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 tags: JavaScript AngularJS API Sass
@@ -20,22 +20,23 @@ tags: JavaScript AngularJS API Sass
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 tags: JavaScript AngularJS API Sass
 
----
 
----
+
+
 
 ### CV
-
+---
 - [Project 1 Title](http://example.com/)
 
 
----
+
 
 ### Patents
-
+---
 [Image Gallery in VR with Leap Motion](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 
+---
 ---
 
