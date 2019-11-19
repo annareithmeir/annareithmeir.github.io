@@ -1398,7 +1398,7 @@ button {
 	align-items: center;
 }
 
-h1:after {
+h1.content:after {
     content:' ';
     display:block;
     border:2px solid #d0d0d0;
