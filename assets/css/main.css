@@ -1375,6 +1375,7 @@ button {
 	position: relative;
 	transition: 0.2s ease-in-out;
 	letter-spacing: 2px;
+	pointer-events: none;
 }
 
 .name {
