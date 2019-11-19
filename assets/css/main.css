@@ -1000,21 +1000,6 @@ table tfoot td {
   margin: 0 0 10px;
 }
 
-.p::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 0;
-  display: block;
-  width: 7px;
-  height: 7px;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  background-color: #515151;
-}
 
 .content-box {
   padding: 20px;
@@ -1414,6 +1399,9 @@ button {
 	align-items: center;
 }
 
+h1.content {
+	padding-top:50px
+}
 h1.content:after {
     content:' ';
     display:block;
