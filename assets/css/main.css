@@ -1364,30 +1364,37 @@ a.newer-posts:hover {
 
 
 button {
-  position: relative
-  outline: none
-  text-decoration: none
-  border-radius: 50px
-  display: flex
-  justify-content: center
-  align-items: center
-  cursor: pointer
-  text-transform: uppercase
-  height: 60px
-  width: 210px
-  opacity: 1
-  background-color: #ffffff
-  border: 1px solid rgba(22, 76, 167, 0.6)
-  span
-      color: rgba(22, 76, 167, 1)
-      font-size: 12px
-      font-weight: 500
-      letter-spacing: 0.7px
-  &:hover 
-      animation: rotate 0.7s ease-in-out both
-      span
-          animation: storm 0.7s ease-in-out both
-          animation-delay: 0.06s
+	background: transparent;
+	color: #fff;
+	border: 3px solid #fff;
+	border-radius: 50px;
+	padding: 0.8rem 2rem;
+	font: 24px "Margarine", sans-serif;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s ease-in-out;
+	letter-spacing: 2px;
+}
+
+.name {
+	width: 100%;
+	text-align: center;
+	padding: 0 0 3rem;
+	font: 500 14px 'Rubik', sans-serif;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.button__wrapper {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
