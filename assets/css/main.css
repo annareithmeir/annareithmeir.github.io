@@ -979,7 +979,7 @@ table tfoot td {
   font-weight: 700;
 }
 
-.about .author-name::after {
+.about .author-name::after .about.p::after {
   content: "";
   position: absolute;
   left: 50%;
