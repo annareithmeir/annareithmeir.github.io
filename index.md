@@ -34,6 +34,7 @@ position-specific scoring matrix and the ProtVec encoded MSA is used as the inpu
 Finally, the results show that the learning of additional structural features is possible
 without a significant loss of performance.
 <img src="images/DenseCNN.png?raw=true"/>
+[PDF](/pdf/BA_AnnaReithmeir_final.pdf)
 tags: Python PyTorch LSTM NLP Bioinformatics
 
 [Image reconstruction with C++](/sample_page)
