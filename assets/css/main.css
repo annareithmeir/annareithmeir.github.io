@@ -1000,7 +1000,7 @@ table tfoot td {
   margin: 0 0 10px;
 }
 
-.about p::after {
+.p::after {
   content: "";
   position: absolute;
   left: 50%;
