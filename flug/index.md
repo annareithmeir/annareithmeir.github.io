@@ -1,1 +1,1 @@
-<img src="../images/flix.jpg?raw=true"/>
+<img src="../images/flix.png?raw=true"/>
