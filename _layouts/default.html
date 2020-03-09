@@ -111,7 +111,7 @@
 	<h1 class="page-title content"><span class="headline">Current Projects</span></h1>
 	    <h3>Android Application using AR</h3>
 	    <div class="page-date"><span>11/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Currently I am working on an application for Android which makes use of augmented reality using Unity & Vuforia. </p>
+	    <p> I developed a small Android application for an augmented art gallery experience. When the back-camera is used the app augments real-world artwork while the front-camera interacts with the user's face by enhancing his or her face with selected pieces ao art. I developed the app in order to try out AR development in Unity. </p>
 	    <button>Unity</button>
 	    <button class="btn btn-default btn-sm">C#</button>
 	    <button class="btn btn-default btn-xs">Android</button>
@@ -125,8 +125,12 @@
 	      </figure>
 	    </div> <!-- End Page Cover Image -->  
 	    <div class="page-date"><span>04/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Neural networks have proven to be useful for the prediction of the secondary structure of proteins from multiple sequence alignments. As the computation of such alignments is computationally complex, I looked at the possibilities to achieve similar secondary structure predictions by using methods from NLP and advanced network models. I represented the proteins by word embeddings and studied if the prediction can benefit from the additional learning of structural features, namely the relative solvent accessibility and the flexibility. To this end, I trained, tested and evaluated different network architectures on a data set of 2935 protein sequences. Apart from CNNs and LSTMs, I implemented  combinations of the two network types as well as networks with DenseNet-inspired layers. I could find out that a Q3 accuracy of 83.17% can be achieved on that specific dataset and that learning of additional structural protein features is possible without a significant loss of performance. </p>
-            <button class="btn btn-default btn-lg">PyTorch</button>
+	    <p> Neural networks have proven to be useful for the prediction of the3D protein structure. This is usually done by representing the amino acid sequences as multiple sequence alignments (MSA). However, the complexity of computing such
+MSAs poses a challenge which is why a method which does not rely on the computation of MSAs is desirable. 
+In the scope of my Bachelor thesis, I investigated to what extent the use of NLP methods such as word embeddings and LSTMs can
+improve the performance of deep neural networks in protein structure prediction without the use of MSAs.
+Moreover, I investigated if multi-task learning of additional structural features further improve the predictions.</>
+	    <button class="btn btn-default btn-lg">PyTorch</button>
 	    <button class="btn btn-default btn-lg">LSTM</button>
 	    <button class="btn btn-default btn-lg">NLP</button>
 	    <button class="btn btn-default btn-lg">Multitask Learning</button>
@@ -140,7 +144,7 @@
 	    
 	    <h3>Porting OctNet to PyTorch</h3>
 	    <div class="page-date"><span>08/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Porting OctNet code from Lua to Python to make it accessible with PyTorch.</p>
+	    <p> Porting OctNet code from Lua to Python to make it usable with PyTorch.</p>
 	    <button class="btn btn-default btn-lg">Lua</button>
 	    <button class="btn btn-default btn-lg">PyTorch</button>
 	    <button class="btn btn-default btn-lg">Pybind11</button>
