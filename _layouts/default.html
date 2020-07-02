@@ -80,7 +80,7 @@
       </div>
       <div class="author-name">Anna Reithmeir</div>
       <p>Informatics Master's student at TU Munich.</p>
-      <a class="author-name" href="pdf/cv.pdf" target="_blank">CV</a>
+      <!--a class="author-name" href="pdf/cv.pdf" target="_blank">CV</a -->
     </div>
   </header> <!-- End Header -->
   <footer>
@@ -109,27 +109,29 @@
     <div class="wrap-content">
      
 	<h1 class="page-title content"><span class="headline">Current Projects</span></h1>
-	    <h3>Android Application using AR</h3>
+	    <h3>Parallelization of the heat equation for Supermuc</h3>
+	    <div class="page-date"><span>06/20&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+	    <p> In the scope of a uni project I am parallelizing the computation of the heat equation with OpenMP and MPI. The code is implemented for one of the fastest supercomputers in Germany - the Supermuc in Garching. The goal is to learn how to parallelize code efficiently and exploit the hardware of multicore computers to its fullest.</p>
+	    <button class="btn btn-default btn-sm">C</button>
+	    <button class="btn btn-default btn-xs">MPI</button>
+	    <button class="btn btn-default">OpenMP</button>
+	    <button class="btn btn-default">Likwid</button>
+	    
+	<h1 class="page-title content">Past Projects</h1>
+
+		<h3>Android augmented art</h3>
 	    <div class="page-date"><span>11/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> I developed a small Android application for an augmented art gallery experience. When the back-camera is used the app augments real-world artwork while the front-camera interacts with the user's face by enhancing his or her face with selected pieces ao art. I developed the app in order to try out AR development in Unity. </p>
+	    <p> I developed a small Android application for an augmented art gallery experience. When the back-camera is used the app augments realworld artwork while the front-camera interacts with the user's face by enhancing his or her face with selected pieces of art. This was a personal project for myself to try out AR development in Unity. </p>
 	    <button>Unity</button>
 	    <button class="btn btn-default btn-sm">C#</button>
 	    <button class="btn btn-default btn-xs">Android</button>
 	    <button class="btn btn-default">Vuforia</button>
-	    
-	<h1 class="page-title content">Past Projects</h1>
-	    <h3>Predicting secondary structure of Proteins with Neural Networks and Multitask learning</h3>
-	    <div class="page-cover-image">
-	      <figure>
-		<img class="page-image" src=/images/DenseCNN.png alt="DenseCNN">
-	      </figure>
-	    </div> <!-- End Page Cover Image -->  
+
+
+	    <h3>Predicting secondary structure of proteins with neural networks and multitask learning</h3> 
 	    <div class="page-date"><span>04/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Neural networks have proven to be useful for the prediction of the3D protein structure. This is usually done by representing the amino acid sequences as multiple sequence alignments (MSA). However, the complexity of computing such
-MSAs poses a challenge which is why a method which does not rely on the computation of MSAs is desirable. 
-In the scope of my Bachelor thesis, I investigated to what extent the use of NLP methods such as word embeddings and LSTMs can
-improve the performance of deep neural networks in protein structure prediction without the use of MSAs.
-Moreover, I investigated if multi-task learning of additional structural features further improve the predictions.</p>
+	    <p> In the scope of my Bachelor's thesis I investigated to what extent the use of natural language processing methods such as word embeddings and LSTMs can
+improve the performance of deep neural networks in protein structure prediction. In addition to the structure further features were learned with the help of multi-task learning.</p>
 	    <button class="btn btn-default btn-lg">PyTorch</button>
 	    <button class="btn btn-default btn-lg">LSTM</button>
 	    <button class="btn btn-default btn-lg">NLP</button>
@@ -138,45 +140,41 @@ Moreover, I investigated if multi-task learning of additional structural feature
 	    
 	    <h3>Code plagiarism checking tool</h3>
 	    <div class="page-date"><span>08/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Development of a tool to detect code plagiarisms in student coding homework submitted to the ARTEMIS platform. The results are shown graphically in the form of graphs. I implemented a bash script which accesses the student homeworks via Git, compares them to each other and produces similarity graphs.</p>
+	    <p> This tool detects code plagiarisms in student coding homework submitted to the ARTEMIS platform. The results are shown graphically in the form of similarity graphs.</p>
 	    <button class="btn btn-default btn-lg">Linux</button>
 	    <button class="btn btn-default btn-lg">Bash</button>
 	    
 	    <h3>Porting OctNet to PyTorch</h3>
 	    <div class="page-date"><span>08/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Porting OctNet code from Lua to Python to make it usable with PyTorch.</p>
+	    <p> I worked on porting the OctNet code from Lua to Python to make it usable with PyTorch.</p>
 	    <button class="btn btn-default btn-lg">Lua</button>
 	    <button class="btn btn-default btn-lg">PyTorch</button>
 	    <button class="btn btn-default btn-lg">Pybind11</button>
 	    
-	    <h3>Image Gallery in Virtual Reality with Leap Motion</h3>
+	    <h3>Image gallery in VR with Leap Motion</h3>
 	    <div class="page-date"><span>08/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Development of an image gallery in VR which can be used with LeapMotion in order to interact directly with the hands and gestures</p>
+	    <p> I developed an image gallery in VR which can be used with the LeapMotion for direct interaction with hands and gestures.</p>
 	    <button class="btn btn-default btn-lg">Unity</button>
 	    <button class="btn btn-default btn-lg">C#</button>
 	    <button class="btn btn-default btn-lg">Leap Motion</button>
 	    
 	    <h3>3D image reconstruction from CT scans</h3>
-	    <div class="page-cover-image">
-	      <figure>
-		<img class="page-image" src=/images/cpppraktikum.png alt="Image Reconstruction">
-	      </figure>
-	    </div> <!-- End Page Cover Image --> 
 	    <div class="page-date"><span>02/18&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Using C++ and Qt to reconstruct images from tomography scans in dark-field imaging.</p>
+	    <p> Yet another uni project. Here I used C++ and Qt to reconstruct images from tomography scans in dark-field imaging. This was my first C++ project and got me hooked on this language. </p>
 	    <button class="btn btn-default btn-lg">C++</button>
 	    <button class="btn btn-default btn-lg">Qt</button>
 	    <button class="btn btn-default btn-lg">Image Reconstruction</button>
 	   
+
+	   <h1 class="page-title content"><span class="headline">Personal interests</span></h1>
+
+	    <p> Software development - Machine learning - Computer vision - Natural language processing - Robotics - High Performance Computing</p>
+	    <p>If not in front of my screen, chances are high to be found on my slackline or my bike, dancing at some music festival or looking for food :D </p>
 	    
 	<h1 class="page-title content">Patents</h1>
-            <h3>VR Image gallery using gestures with Leap Motion</h3>
-	    <div class="page-date"><span>02/19&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-	    <p> Patent number: xxx</p>
-	    <button class="btn btn-default btn-lg">Unity</button>
-	    <button class="btn btn-default btn-lg">C#</button>
-	    <button class="btn btn-default btn-lg">VR</button>
-	    <button class="btn btn-default btn-lg">Leap Motion</button>
+            <h3>Method for viewing a content gallery using hand interaction in VR</h3>
+	    <div class="page-date"><span>08/18&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
      
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
