@@ -775,8 +775,8 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   color: #515151;
-  background-color: #fbfbfb;
-	background-image:url(/images/_DSC4576.JPG);
+ 
+background-image:url(/images/_DSC4576.JPG);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
