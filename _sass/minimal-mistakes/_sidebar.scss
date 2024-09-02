@@ -19,9 +19,9 @@
   @include breakpoint($large) {
     float: inline-start;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
-    opacity: 0.75;
+    opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
+    transition: none;
 
     &:hover {
       opacity: 1;
@@ -124,8 +124,10 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
+  width: 46px;
   height: 36px;
+  opacity: 1; /* Set the opacity to fully visible */
+  transition: none; /* Remove the transition effect */
 
   @include breakpoint($large) {
     display: block;
@@ -134,11 +136,11 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 180px;
+    border-radius: 0%;
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 0px;
       border: 1px solid $border-color;
     }
   }
