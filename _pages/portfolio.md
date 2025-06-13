@@ -15,16 +15,22 @@ Research
 	- Longitudinal and intra-patient data
 	- Abdominal MR/CT images with focus on liver
 	- Analysis of images with pathologies
-- Regularization techniques for image registration, e.g. physics-inspired methods
-- Riemannian manifold-valued data representations for medical image analysis
+- Regularization techniques for image registration
+	- physics-inspired methods
+- Riemannian manifold-valued data for medical image analysis
 - General vision encoders 
-- Diffusion models and generative methods in general
+- Diffusion models
 
 
 
 Teaching
 
-- Design and teaching of different courses on AI methodology and AI in medicine 
+- Design and teaching of different course formats 
+	- topics including: 
+		- basic and advanced AI methodology
+		- AI in medicine 
 	- Master's seminars (at TU Munich)
-	- Girl's day and further high school workshops (with Munich Center for Machine Learning)
-	- Workshop for Bavarian informatics high school teachers (with TU Munich Computing Education Research Group)
+	- Girl's day and further high school workshops 
+	  (with Munich Center for Machine Learning)
+	- Workshop for Bavarian informatics high school teachers 
+	  (with TU Munich Computing Education Research Group)
