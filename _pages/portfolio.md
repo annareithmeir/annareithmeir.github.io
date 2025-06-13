@@ -25,10 +25,10 @@ Research
 
 Teaching
 
+- Course topics include
+	- basic and advanced AI methodology
+	- AI applications in medicine
 - Design and teaching of different course formats 
-	- topics including: 
-		- basic and advanced AI methodology
-		- AI in medicine 
 	- Master's seminars (at TU Munich)
 	- Girl's day and further high school workshops 
 	  (with Munich Center for Machine Learning)
