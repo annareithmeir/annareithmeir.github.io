@@ -7,6 +7,8 @@ author_profile: true
 
 {% include base_path %}
 
+
+
 Research
 
 - Medical image registration
@@ -17,6 +19,8 @@ Research
 - Riemannian manifold-valued data representations for medical image analysis
 - General vision encoders 
 - Diffusion models and generative methods in general
+
+
 
 Teaching
 
