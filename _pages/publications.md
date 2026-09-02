@@ -22,7 +22,7 @@ author_profile: true
   {% else %}
     {% assign pub_title = post.title %}
   {% endif %}
-  <article class="pub-card" style="margin-bottom: 1em;">
+  <article class="pub-card{% unless post.teaser %} pub-card--no-teaser{% endunless %}" style="margin-bottom: 1em;">
     {% if post.teaser %}
       <img class="pub-card__teaser" src="{{ post.teaser | prepend: '/images' | prepend: base_path }}" alt="" />
     {% endif %}

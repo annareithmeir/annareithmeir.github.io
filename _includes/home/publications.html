@@ -2,7 +2,7 @@
 <section class="home-section">
   <div class="home-section__head">
     <h2 class="home-section__title">Selected Publications</h2>
-    <a class="home-section__link" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+    <a class="home-section__link" href="https://scholar.google.com/citations?user=RjjBUtEAAAAJ&hl=de" target="_blank" rel="noopener noreferrer">All publications &rarr;</a>
   </div>
   <div class="pub-grid">
     {% assign pubs = site.publications | sort: 'date' | reverse %}
@@ -12,7 +12,7 @@
       {% else %}
         {% assign pub_title = post.title %}
       {% endif %}
-      <article class="pub-card">
+      <article class="pub-card{% unless post.teaser %} pub-card--no-teaser{% endunless %}">
         {% if post.teaser %}
           <img class="pub-card__teaser" src="{{ post.teaser | prepend: '/images' | prepend: base_path }}" alt="" />
         {% endif %}

@@ -342,6 +342,12 @@
   box-shadow: 0 1px 2px rgba(20, 24, 29, 0.04), 0 8px 24px -12px rgba(20, 24, 29, 0.1);
 }
 
+/* publications without a teaser image (e.g. journal articles with no figure
+   on hand) get a single-column layout instead of a blank image gutter */
+.pub-card--no-teaser {
+  grid-template-columns: 1fr;
+}
+
 .pub-card__teaser {
   width: 100%;
   height: 6em;
