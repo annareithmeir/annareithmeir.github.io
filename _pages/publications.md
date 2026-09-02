@@ -14,8 +14,8 @@ author_profile: true
 {% for post in pubs %}
   {% assign this_year = post.date | default: "1900-01-01" | date: "%Y" %}
   {% if this_year != current_year %}
-    <h2 class="home-section__title" style="margin: 2em 0 1em;">{{ this_year }}</h2>
-    {% assign current_year = this_year %}
+<h2 class="home-section__title" style="margin: 2em 0 1em;">{{ this_year }}</h2>
+  {% assign current_year = this_year %}
   {% endif %}
   {% if post.id %}
     {% assign pub_title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
