@@ -17,3 +17,4 @@ redirect_from:
 {% include home/news.html %}
 {% include home/publications.html %}
 {% include home/teaching.html %}
+{% include home/outreach.html %}
