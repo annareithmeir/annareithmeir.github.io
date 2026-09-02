@@ -11,7 +11,7 @@
         {% assign news_title = post.title %}
       {% endif %}
       <li class="news-item">
-        <span class="news-item__date">{{ post.date | default: "1900-01-01" | date: "%Y.%m.%d" }}</span>
+        <span class="news-item__date">{{ post.date | default: "1900-01-01" | date: "%d.%m.%Y" }}</span>
         <span class="news-item__text">{{ news_title }}</span>
       </li>
     {% endfor %}
