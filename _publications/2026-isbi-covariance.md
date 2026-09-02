@@ -3,7 +3,7 @@ title: "Covariance Descriptors Meet General Vision Encoders: Riemannian Deep Lea
 collection: publications
 permalink: /publication/2026-isbi
 date: 2026-02-01
-venue: 'Submitted to IEEE ISBI 2026'
+venue: 'IEEE ISBI 2026'
 arxiv: 'https://arxiv.org/abs/2511.04190'
 code: 'https://github.com/compai-lab/2026-isbi-mayr'
 authors: 'Josef Mayr, <b>Anna Reithmeir</b>, Maxime Di Folco, Julia A. Schnabel'

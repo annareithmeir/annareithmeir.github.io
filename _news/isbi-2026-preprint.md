@@ -1,5 +1,5 @@
 ---
-title: "New preprint: [Covariance Descriptors Meet General Vision Encoders](/publication/2026-isbi), submitted to IEEE ISBI 2026."
+title: "Paper [Covariance Descriptors Meet General Vision Encoders](/publication/2026-isbi) accepted at ISBI 2026."
 collection: news
 date: 2025-11-06
 ---
