@@ -6,9 +6,13 @@ excerpt: "Anna Reithmeir - PhD Student at the University of Munich - Chair for C
 author_profile: false
 redirect_from:
   - /about/
+  - /portfolio/
+  - /cv/
+  - /teaching/
 ---
 
 {% include home/hero.html %}
 {% include home/focus.html %}
 {% include home/news.html %}
 {% include home/publications.html %}
+{% include home/teaching.html %}

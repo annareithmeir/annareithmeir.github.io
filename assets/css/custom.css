@@ -326,6 +326,17 @@
 .news-item__text a { color: var(--accent); text-decoration: none; }
 .news-item__text a:hover { text-decoration: underline; }
 
+.home-section__text {
+  font-size: 1em;
+  color: var(--ink);
+  max-width: 60ch;
+  line-height: 1.6;
+  margin: 1em 0 0;
+}
+
+.home-section__text a { color: var(--accent); text-decoration: none; }
+.home-section__text a:hover { text-decoration: underline; }
+
 .pub-grid {
   display: grid;
   gap: 1em;
