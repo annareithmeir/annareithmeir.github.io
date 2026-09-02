@@ -1,0 +1,462 @@
+/* ==========================================================================
+   Custom components for annareithmeir.github.io
+   Layered on top of the "modern" Minimal Mistakes skin (see
+   _sass/minimal-mistakes/skins/_modern.scss for the base color/type vars).
+   Light-only palette, matching the skin.
+   ========================================================================== */
+
+:root {
+  --ink: #14181D;
+  --ink-muted: #565F68;
+  --ink-faint: #7C858C;
+  --surface: #FFFFFF;
+  --surface-2: #ECEFEC;
+  --line: #DCE1DE;
+  --line-strong: #C3CAC6;
+  --accent: #1E4FA0;
+  --accent-ink: #103063;
+  --accent-soft: #E7EDF7;
+  --accent-contrast: #FFFFFF;
+  --font-mono: "IBM Plex Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --font-head: "Archivo", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Iowan Old Style", serif;
+  --radius: 3px;
+}
+
+/* tighten up the default masthead nav to match the new type system */
+.masthead .site-title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.masthead__menu-item a:not(.site-title) {
+  font-family: var(--font-head);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Homepage hero
+   ========================================================================== */
+
+.home-hero {
+  padding: 3.2em 0 2.6em;
+}
+
+.home-hero__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3em;
+  align-items: center;
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.home-hero__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.9em;
+}
+
+.home-hero__name {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(2.1em, 4.6vw, 3.1em);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.home-hero__tagline {
+  font-family: var(--font-head);
+  font-size: 1.15em;
+  font-weight: 500;
+  color: var(--ink-muted);
+  max-width: 42ch;
+  margin: 0 0 1.1em;
+  line-height: 1.5;
+}
+
+.home-hero__bio {
+  max-width: 56ch;
+  margin: 0 0 1.4em;
+  font-size: 1.02em;
+  line-height: 1.65;
+}
+
+.home-hero__bio b { font-weight: 700; }
+
+.home-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-head);
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.65em 1.05em;
+  border-radius: 999px;
+  text-decoration: none !important;
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  background: var(--surface);
+  transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease, color 0.12s ease;
+}
+
+.pill svg { width: 0.95em; height: 0.95em; flex: none; }
+
+.pill:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  color: var(--accent-ink);
+}
+
+.pill--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast) !important;
+}
+
+.pill--primary:hover {
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
+  color: var(--accent-contrast) !important;
+}
+
+.home-hero__portrait-wrap {
+  position: relative;
+  justify-self: center;
+}
+
+.home-hero__field {
+  position: absolute;
+  inset: -18px;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  opacity: 0.7;
+  -webkit-mask-image: radial-gradient(circle at center, black 55%, transparent 78%);
+  mask-image: radial-gradient(circle at center, black 55%, transparent 78%);
+  z-index: 0;
+}
+
+.home-hero__portrait {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-2);
+}
+
+@media (max-width: 64em) {
+  .home-hero__grid { grid-template-columns: 1fr; }
+  .home-hero__portrait-wrap { justify-self: start; margin-top: 1.5em; }
+  .home-hero__portrait { width: 190px; height: 190px; }
+}
+
+/* ==========================================================================
+   Homepage sections (focus chips / news / selected publications)
+   ========================================================================== */
+
+.home-section {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 2.6em 1em;
+  border-top: 1px solid var(--line);
+}
+
+.home-section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-bottom: 1.3em;
+}
+
+.home-section__title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+}
+
+.home-section__link {
+  font-family: var(--font-head);
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.home-section__link:hover { text-decoration: underline; }
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  color: var(--ink-muted);
+  border: 1px solid var(--line);
+  padding: 0.45em 0.8em;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  gap: 1.2em;
+  padding: 0.8em 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-item:first-child { padding-top: 0; }
+.news-item:last-child { border-bottom: none; }
+
+.news-item__date {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  color: var(--ink-faint);
+  padding-top: 0.15em;
+  font-variant-numeric: tabular-nums;
+}
+
+.news-item__text {
+  font-family: var(--font-head);
+  font-size: 0.98em;
+}
+
+.news-item__text a { color: var(--accent); text-decoration: none; }
+.news-item__text a:hover { text-decoration: underline; }
+
+.pub-grid {
+  display: grid;
+  gap: 1em;
+}
+
+.pub-card {
+  display: grid;
+  grid-template-columns: 8.2em 1fr;
+  gap: 1.3em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2em;
+  box-shadow: 0 1px 2px rgba(20, 24, 29, 0.04), 0 8px 24px -12px rgba(20, 24, 29, 0.1);
+}
+
+.pub-card__teaser {
+  width: 100%;
+  height: 6em;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.pub-card__meta {
+  display: flex;
+  gap: 0.6em;
+  align-items: center;
+  margin-bottom: 0.5em;
+  flex-wrap: wrap;
+}
+
+.pub-card__venue {
+  font-family: var(--font-mono);
+  font-size: 0.72em;
+  letter-spacing: 0.03em;
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  padding: 0.2em 0.55em;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+}
+
+.pub-card__year {
+  font-family: var(--font-mono);
+  font-size: 0.78em;
+  color: var(--ink-faint);
+}
+
+.pub-card__title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.05em;
+  margin: 0 0 0.4em;
+  line-height: 1.32;
+}
+
+.pub-card__title a { color: var(--ink); text-decoration: none; }
+.pub-card__title a:hover { color: var(--accent); }
+
+.pub-card__authors {
+  font-family: var(--font-head);
+  font-size: 0.85em;
+  color: var(--ink-muted);
+  margin: 0 0 0.6em;
+}
+
+.pub-card__authors b { color: var(--ink); font-weight: 700; }
+
+.pub-card__links {
+  display: flex;
+  gap: 0.9em;
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+}
+
+.pub-card__links a { color: var(--accent); text-decoration: none; }
+.pub-card__links a:hover { text-decoration: underline; }
+
+@media (max-width: 40em) {
+  .pub-card { grid-template-columns: 1fr; }
+  .pub-card__teaser { height: 9em; }
+}
+
+/* ==========================================================================
+   CV page
+   ========================================================================== */
+
+.cv-intro {
+  font-size: 1.02em;
+  color: var(--ink-muted);
+  max-width: 60ch;
+  margin-bottom: 0.5em;
+}
+
+.cv-section {
+  margin: 2.2em 0;
+}
+
+.cv-section__title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5em;
+  margin: 0 0 1em;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  gap: 1.2em;
+  padding: 0.7em 0;
+}
+
+.cv-entry + .cv-entry { border-top: 1px solid var(--line); }
+
+.cv-entry__date {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  color: var(--ink-faint);
+  padding-top: 0.2em;
+  font-variant-numeric: tabular-nums;
+}
+
+.cv-entry__title {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0 0 0.2em;
+}
+
+.cv-entry__subtitle {
+  font-family: var(--font-head);
+  font-size: 0.9em;
+  color: var(--ink-muted);
+  margin: 0 0 0.3em;
+}
+
+.cv-entry__detail {
+  font-size: 0.95em;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+}
+
+@media (max-width: 40em) {
+  .cv-entry { grid-template-columns: 1fr; gap: 0.3em; }
+}
+
+@media print {
+  .masthead, .page__footer, #footer { display: none !important; }
+}
+
+/* ==========================================================================
+   Specificity fixes: the homepage renders inside .page__content (splash
+   layout), whose base rules (h2 border-bottom, p/li font-size: 0.9em) would
+   otherwise win over the plain single-class rules above and shrink/underline
+   things unintentionally. Re-asserting the intended values under a
+   .page__content-prefixed selector beats those rules on specificity.
+   ========================================================================== */
+
+.page__content p.home-hero__eyebrow {
+  font-size: 0.8em;
+}
+
+.page__content p.home-hero__tagline {
+  font-size: 1.15em;
+}
+
+.page__content p.home-hero__bio {
+  font-size: 1.02em;
+}
+
+.page__content p.pub-card__authors {
+  font-size: 0.85em;
+}
+
+.page__content li.chip {
+  font-size: 0.82em;
+}
+
+.page__content li.news-item {
+  font-size: 1em;
+}
+
+.page__content h2.home-section__title {
+  border-bottom: none;
+  padding-bottom: 0;
+}

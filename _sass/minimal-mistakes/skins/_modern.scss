@@ -1,0 +1,50 @@
+/* ==========================================================================
+   "Modern" skin — custom palette + type for annareithmeir.github.io
+   Cool paper neutrals with a single cobalt accent; Archivo for headings,
+   Source Serif 4 for body copy, IBM Plex Mono for labels/meta.
+   ========================================================================== */
+
+/* Typography */
+$sans-serif-narrow: "Archivo", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
+$sans-serif: "Archivo", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
+$serif: "Source Serif 4", Georgia, "Iowan Old Style", "Palatino Linotype", serif !default;
+$monospace: "IBM Plex Mono", Menlo, Consolas, "Liberation Mono", monospace !default;
+
+$global-font-family: $serif !default;
+$header-font-family: $sans-serif-narrow !default;
+$caption-font-family: $monospace !default;
+
+/* Colors */
+$gray: #545E67 !default;
+$dark-gray: #2A3238 !default;
+$darker-gray: #14181D !default;
+$light-gray: #AEB6BC !default;
+$lighter-gray: #E4E8E6 !default;
+
+$background-color: #F3F5F3 !default;
+$code-background-color: #ECEFEC !default;
+$code-background-color-dark: $light-gray !default;
+$text-color: #14181D !default;
+$muted-text-color: #565F68 !default;
+$border-color: #DCE1DE !default;
+$form-background-color: #ECEFEC !default;
+$footer-background-color: #ECEFEC !default;
+
+$primary-color: #1E4FA0 !default;
+$success-color: #2E7D4F !default;
+$warning-color: #B5720B !default;
+$danger-color: #B23A34 !default;
+$info-color: #1E4FA0 !default;
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
+
+/* links */
+$link-color: $primary-color !default;
+$link-color-hover: #103063 !default;
+$link-color-visited: mix(#000, $link-color, 15%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#fff, $primary-color, 80%) !default;
+
+/* radius */
+$border-radius: 3px !default;

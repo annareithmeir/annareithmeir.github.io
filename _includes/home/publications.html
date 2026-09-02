@@ -1,0 +1,36 @@
+{% include base_path %}
+<section class="home-section">
+  <div class="home-section__head">
+    <h2 class="home-section__title">Selected Publications</h2>
+    <a class="home-section__link" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+  </div>
+  <div class="pub-grid">
+    {% assign pubs = site.publications | sort: 'date' | reverse %}
+    {% for post in pubs limit:3 %}
+      {% if post.id %}
+        {% assign pub_title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+      {% else %}
+        {% assign pub_title = post.title %}
+      {% endif %}
+      <article class="pub-card">
+        {% if post.teaser %}
+          <img class="pub-card__teaser" src="{{ post.teaser | prepend: '/images' | prepend: base_path }}" alt="" />
+        {% endif %}
+        <div>
+          <div class="pub-card__meta">
+            <span class="pub-card__venue">{{ post.venue }}</span>
+            <span class="pub-card__year">{{ post.date | default: "1900-01-01" | date: "%Y" }}</span>
+          </div>
+          <h3 class="pub-card__title"><a href="{{ base_path }}{{ post.url }}">{{ pub_title }}</a></h3>
+          <p class="pub-card__authors">{{ post.authors }}</p>
+          <div class="pub-card__links">
+            {% if post.arxiv %}<a href="{{ post.arxiv }}">arXiv</a>{% endif %}
+            {% if post.code %}<a href="{{ post.code }}">Code</a>{% endif %}
+            {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+            {% if post.video %}<a href="{{ post.video }}">Video</a>{% endif %}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
