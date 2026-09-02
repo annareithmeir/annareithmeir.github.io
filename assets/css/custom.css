@@ -23,7 +23,16 @@
   --radius: 3px;
 }
 
-/* tighten up the default masthead nav to match the new type system */
+/* masthead: same blue as the primary buttons, with light text/icons for contrast */
+.masthead {
+  background: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.masthead .greedy-nav {
+  background: transparent;
+}
+
 .masthead .site-title {
   font-family: var(--font-head);
   font-weight: 700;
@@ -34,6 +43,61 @@
   font-family: var(--font-head);
   font-size: 0.9em;
   font-weight: 600;
+}
+
+.masthead .greedy-nav a {
+  color: var(--accent-contrast);
+}
+
+.masthead .greedy-nav a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.masthead .greedy-nav .visible-links a::before {
+  background: var(--accent-contrast);
+}
+
+.masthead .search__toggle {
+  color: var(--accent-contrast);
+}
+
+.masthead .search__toggle:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.masthead .navicon,
+.masthead .navicon::before,
+.masthead .navicon::after {
+  background: var(--accent-contrast);
+}
+
+.masthead .greedy-nav__toggle:hover .navicon,
+.masthead .greedy-nav__toggle:hover .navicon::before,
+.masthead .greedy-nav__toggle:hover .navicon::after {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* mobile dropdown menu: keep this a light panel rather than blue-on-blue */
+.masthead .greedy-nav .hidden-links {
+  background: var(--surface);
+  border-color: var(--line-strong);
+}
+
+.masthead .greedy-nav .hidden-links a {
+  color: var(--ink);
+}
+
+.masthead .greedy-nav .hidden-links a:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.masthead .greedy-nav .hidden-links::before {
+  border-color: var(--line-strong) transparent;
+}
+
+.masthead .greedy-nav .hidden-links::after {
+  border-color: var(--surface) transparent;
 }
 
 /* ==========================================================================
@@ -222,11 +286,11 @@
 .chip {
   font-family: var(--font-mono);
   font-size: 0.82em;
-  color: var(--ink-muted);
-  border: 1px solid var(--line);
+  color: var(--accent-ink);
+  border: 1px solid transparent;
   padding: 0.45em 0.8em;
   border-radius: var(--radius);
-  background: var(--surface);
+  background: var(--accent-soft);
 }
 
 .news-list {
