@@ -6,7 +6,7 @@
   </div>
   <div class="pub-grid">
     {% assign pubs = site.publications | sort: 'date' | reverse %}
-    {% for post in pubs limit:3 %}
+    {% for post in pubs limit:4 %}
       {% if post.id %}
         {% assign pub_title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
       {% else %}
