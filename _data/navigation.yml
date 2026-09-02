@@ -1,4 +1,4 @@
 # main links links
+# (empty: the masthead/menu bar has been removed - this is now a
+# single-page site. Left in place in case a menu bar is reintroduced.)
 main:
-  - title: "Publications"
-    url: /publications/

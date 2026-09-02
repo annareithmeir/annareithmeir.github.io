@@ -9,6 +9,7 @@ redirect_from:
   - /portfolio/
   - /cv/
   - /teaching/
+  - /publications/
 ---
 
 {% include home/hero.html %}

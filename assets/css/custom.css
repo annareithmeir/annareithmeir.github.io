@@ -23,89 +23,31 @@
   --radius: 3px;
 }
 
-/* masthead: same blue as the primary buttons, with light text/icons for contrast */
-.masthead {
-  background: var(--accent);
-  border-bottom-color: var(--accent);
-}
-
-.masthead .greedy-nav {
-  background: transparent;
-}
-
-.masthead .site-title {
-  font-family: var(--font-head);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.masthead__menu-item a:not(.site-title) {
-  font-family: var(--font-head);
-  font-size: 0.9em;
-  font-weight: 600;
-}
-
-.masthead .greedy-nav a {
-  color: var(--accent-contrast);
-}
-
-.masthead .greedy-nav a:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.masthead .greedy-nav .visible-links a::before {
-  background: var(--accent-contrast);
-}
-
-.masthead .search__toggle {
-  color: var(--accent-contrast);
-}
-
-.masthead .search__toggle:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.masthead .navicon,
-.masthead .navicon::before,
-.masthead .navicon::after {
-  background: var(--accent-contrast);
-}
-
-.masthead .greedy-nav__toggle:hover .navicon,
-.masthead .greedy-nav__toggle:hover .navicon::before,
-.masthead .greedy-nav__toggle:hover .navicon::after {
-  background: rgba(255, 255, 255, 0.75);
-}
-
-/* mobile dropdown menu: keep this a light panel rather than blue-on-blue */
-.masthead .greedy-nav .hidden-links {
-  background: var(--surface);
-  border-color: var(--line-strong);
-}
-
-.masthead .greedy-nav .hidden-links a {
-  color: var(--ink);
-}
-
-.masthead .greedy-nav .hidden-links a:hover {
-  color: var(--accent);
-  background: var(--accent-soft);
-}
-
-.masthead .greedy-nav .hidden-links::before {
-  border-color: var(--line-strong) transparent;
-}
-
-.masthead .greedy-nav .hidden-links::after {
-  border-color: var(--surface) transparent;
-}
-
 /* ==========================================================================
    Homepage hero
    ========================================================================== */
 
 .home-hero {
-  padding: 3.2em 0 2.6em;
+  padding: 0 0 2.6em;
+}
+
+/* full-bleed blue band: breaks out of the centered/padded page column to
+   span the full viewport width, the way the old masthead used to */
+.home-hero__band {
+  background: var(--accent);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 2.6em 0 2.2em;
+}
+
+.home-hero__band-inner {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 .home-hero__grid {
@@ -115,7 +57,7 @@
   align-items: center;
   max-width: 64em;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 2.6em 1em 0;
 }
 
 .home-hero__eyebrow {
@@ -123,7 +65,7 @@
   font-size: 0.8em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(255, 255, 255, 0.8);
   margin: 0 0 0.9em;
 }
 
@@ -133,9 +75,9 @@
   font-size: clamp(2.1em, 4.6vw, 3.1em);
   line-height: 1.04;
   letter-spacing: -0.02em;
-  margin: 0 0 0.5em;
+  margin: 0;
   text-wrap: balance;
-  color: var(--ink);
+  color: var(--accent-contrast);
 }
 
 .home-hero__tagline {
